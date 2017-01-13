@@ -1,0 +1,43 @@
+<div class="w3-col m4 l3 w3-container w3-hide-small w3-collapse" id="navFrame">
+
+
+    <!--Nav card-->
+
+    <nav class="w3-card-12 w3-margin-card w3-center w3-theme-l1">
+        <br>
+
+        <% for (var i in theme.menu){ %>
+        <div class="w3-container w3-padding-small">
+            <a class="w3-btn w3-round-xxlarge w3-theme-d5" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        </div>
+        <% } %>
+
+        <div class="w3-container w3-padding-small">
+            <a class="w3-btn w3-round-xxlarge w3-theme-d5 w3-hide-medium w3-hide-large" onclick="closeNav()">X
+                Close</a>
+        </div>
+
+        <br>
+
+    </nav>
+
+    <!--end Nav card-->
+    <!--Author card-->
+    <div class="w3-card-12 w3-margin-card ">
+
+        <div class="w3-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Angrymice.png/226px-Angrymice.png"
+                 class="w3-hover-sepia" style="width:128px;height:128px;" alt="Norway">
+        </div>
+
+        <header class="w3-container w3-theme-d3">
+            <h3>Ross Higa</h3>
+        </header>
+        <div class="w3-container w3-theme-l1">
+            <h6>Developer and Photographer</h6>
+        </div>
+    </div>
+    <!--end Author card-->
+
+
+</div>
