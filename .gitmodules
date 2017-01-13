@@ -1,0 +1,3 @@
+[submodule "source/static"]
+	path = source/static
+	url = https://github.com/rosshiga/w3card-blog
