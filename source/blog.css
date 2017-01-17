@@ -1,0 +1,24 @@
+/*blog.css contains helper css not in W3.CSS*/
+
+/* The cards seemed too close with the 16px w3-margin*/
+
+.w3-margin-card {
+    margin: 24px !important
+}
+
+
+.w3-margin-footer {
+    margin-top: auto !important;
+    margin-bottom: 20px !important;
+    margin-right: 24px !important;
+    margin-left: 24px !important;
+    padding: 8px;
+}
+
+
+.w3-margin-mobileNav {
+    margin-top: 4px !important;
+    margin-bottom: 0 !important;
+    margin-right: 24px !important;
+    margin-left: 24px !important
+}
