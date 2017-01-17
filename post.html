@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ross Higa">
+    <!-- W3.CSS is an open source modern CSS framework http://www.w3schools.com/w3css/-->
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-green.css">
+    <title>w3card-blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="blog.js"></script>
+</head>
+<body>
+<div class="w3-row">
+
+    <div class="w3-col m4 l3 w3-container w3-hide-small w3-collapse" id="navFrame">
+
+
+        <!--Nav card-->
+
+        <nav class="w3-card-12 w3-margin-card w3-center w3-theme-l1">
+            <br>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5" href="index.html">Home</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5">About</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5">Projects</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5">Photos</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5" href="archive.html">Archive</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5">Contact</a>
+            </div>
+            <div class="w3-container w3-padding-small">
+                <a class="w3-btn w3-round-xxlarge w3-theme-d5 w3-hide-medium w3-hide-large" onclick="closeNav()">X
+                    Close</a>
+            </div>
+            <br>
+
+        </nav>
+
+        <!--end Nav card-->
+        <!--Author card-->
+        <div class="w3-card-12 w3-margin-card ">
+
+            <div class="w3-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Angrymice.png/226px-Angrymice.png"
+                     class="w3-hover-sepia" style="width:128px;height:128px;" alt="Norway">
+            </div>
+
+            <header class="w3-container w3-theme-d3">
+                <h3>Ross Higa</h3>
+            </header>
+            <div class="w3-container w3-theme-l1">
+                <h6>Developer and Photographer</h6>
+            </div>
+        </div>
+        <!--end Author card-->
+
+
+    </div>
+
+
+
+    <div class="w3-rest w3-container ">
+        <div class="w3-card-8 w3-theme-d3 w3-margin-mobileNav" id="mobileNav">
+            <span class="w3-opennav w3-xlarge w3-hide-large w3-hide-medium " onclick="openNav()">&#9776;</span>
+        </div>
+        <article class="w3-card-16 w3-margin-card w3-display-container w3-margin-card">
+            <header class="w3-container w3-theme-d3">
+                <h3>Lorem Ipsum</h3>
+            </header>
+            <div class="w3-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam sit amet sem vulputate, porta sapien eu, mollis est.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Fusce augue tortor, volutpat vel metus eget, dapibus ornare arcu.
+                    Mauris eu placerat odio, eu porta dolor. Nulla quis vehicula felis, vel congue leo.
+                    In hac habitasse platea dictumst. Sed consequat quam at molestie tristique.
+                    Integer nec gravida metus, eget pellentesque velit.
+                    Curabitur nec arcu nisl. Ut pharetra ex ut lorem lobortis, in bibendum nisl porta.
+                    Vestibulum tristique finibus varius.
+                    Curabitur sodales, felis ut aliquam gravida, felis purus euismod justo, et dapibus turpis nisi sit
+                    amet neque.
+                </p>
+                <img src="https://demo.rosshiga.com/media/Marderhund_(Nyctereutes_procyonoides).jpg"
+                     style="width:320px;height:320px;" alt="Norway">
+                <p>
+                    Sed a quam tempor, lobortis neque a, faucibus elit. Etiam pellentesque, lectus ut consectetur faucibus,
+                    libero mauris cursus ex, id auctor nunc turpis in nulla. In porta pulvinar urna, posuere gravida lectus
+                    elementum id.
+                    Aliquam finibus enim eleifend justo maximus, in porta odio eleifend. Nulla euismod orci sollicitudin
+                    justo efficitur, mollis porta elit maximus.
+                    Proin maximus nibh lectus, tempus pharetra lorem convallis in. Aliquam eget nisi orci. Curabitur
+                    tristique convallis ligula, in venenatis nisi tristique nec.
+                    Vestibulum neque sem, lacinia sit amet aliquam ac, ullamcorper eget lorem. Cras mattis lorem vitae
+                    gravida venenatis. Maecenas ultrices dapibus lectus nec suscipit.
+                    Duis non auctor lectus, et egestas libero. Donec cursus ut velit vitae egestas. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent pulvinar vitae
+                    est quis consequat. Nam nisi lacus, feugiat in odio vel, cursus venenatis libero.
+                </p>
+            </div>
+            <div class="w3-container w3-theme-l1 w3-padding-12">
+
+                <button class="w3-btn w3-round-xxlarge w3-theme-d5 " onclick="window.history.back()">Back</button>
+
+            </div>
+
+        </article>
+        <br><br>
+    </div>
+</div>
+<div class="w3-row">
+    <div class="w3-rest w3-container ">
+        <footer class="w3-card-8 w3-margin-footer w3-theme-d3">Ross Higa is lit 2017</footer>
+    </div>
+</div>
+</body>
+</html>
