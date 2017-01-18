@@ -1,15 +1,24 @@
-
-
 <article class="w3-card-16 w3-margin-card w3-display-container w3-margin-card">
     <header class="w3-container w3-theme-d3">
         <h3><%- page.title || item.link%></h3>
-        <h6><%= page.date.format(config.date_format) %></h6>
+        <h5><%= page.date.format(config.date_format) %></h5>
     </header>
     <div class="w3-container">
         <p><%- page.content %></p>
 
         <p>
 
+            <% if (page.tags && page.tags.length){ %>
+            <%
+                <!-- Thanks to klugjo for his hexo tag code github.com/klugjo/bootstrap-blog-hexo -->
+                var tags = [];
+                page.tags.forEach(function(tag){
+                    tags.push('<a href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+                });
+            %>
+
+           Tags: <%- tags.join(' ') %>
+        <% } %>
         </p>
     </div>
     <div class="w3-container w3-theme-l1 w3-padding-12">
