@@ -4,9 +4,12 @@
             <header class="w3-container w3-theme-d3">
                 <h3><%- item.title %></h3>
             </header>
+
+            <% if(post.excerpt) { %>
             <div class="w3-container">
-                <%- item.excerpt || item.content %>
+                <%- post.excerpt %>
             </div>
+            <% } %>
             <div class="w3-container">
                 <a href="<%- config.root %><%- item.path %>">Read more</a>
             </div>
